@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071426">
+<title>AL-FALAH DIGITAL | خدمات تخصصی دیجیتال</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+:root{--bg:#071426;--panel:#0d2038;--panel2:#102943;--gold:#e9bd68;--cyan:#65d9e8;--white:#f5f8fc;--muted:#a9b8c9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:'Vazirmatn',Tahoma,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 12% 12%,#123d59 0,transparent 32%),radial-gradient(circle at 88% 48%,#2c2145 0,transparent 32%),linear-gradient(140deg,#061120,#081a30 55%,#091326)}
+a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:#071426d9;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff12}
+.navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.5px}.mark{width:43px;height:43px;border:1px solid var(--gold);border-radius:13px;display:grid;place-items:center;color:var(--gold);font-size:25px;box-shadow:0 0 25px #e9bd6825}
+.brand small{display:block;color:var(--muted);font-size:10px;font-weight:500;letter-spacing:2px}
+.links{display:flex;gap:25px;color:#c4d0df;font-size:13px}.links a:hover{color:var(--gold)}
+.navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:12px 19px;font:inherit;font-size:13px;font-weight:700;transition:.25s;cursor:pointer}
+.navbtn,.primary{background:linear-gradient(110deg,#f1cf8b,#dca64c);color:#172235;box-shadow:0 8px 28px #e9bd6825}.btn:hover,.navbtn:hover{transform:translateY(-3px);filter:brightness(1.08)}
+.hero{padding:92px 0 70px;position:relative}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:55px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--cyan);border:1px solid #65d9e83b;background:#65d9e80d;padding:8px 14px;border-radius:50px;font-size:12px}
+.pulse{width:7px;height:7px;border-radius:50%;background:#6ef0bc;box-shadow:0 0 0 6px #6ef0bc20;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 11px #6ef0bc00}}
+h1{font-size:clamp(35px,5vw,62px);line-height:1.35;margin:23px 0 18px;font-weight:900;letter-spacing:-1.5px}
+.grad{background:linear-gradient(90deg,#fff1cb,var(--gold),#75e2ed);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:#b9c7d7;line-height:2.2;font-size:15px;max-width:620px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.secondary{border:1px solid #ffffff30;color:#e8eef7;background:#ffffff08}
+.trust{display:flex;gap:22px;margin-top:35px;flex-wrap:wrap;color:#91a5bb;font-size:12px}.trust span:before{content:"✦";color:var(--gold);margin-left:7px}
+.visual{min-height:420px;position:relative;display:grid;place-items:center}
+.orbit{width:min(390px,85vw);aspect-ratio:1;border:1px solid #ffffff20;border-radius:50%;position:absolute;animation:spin 28s linear infinite}
+.orbit:before,.orbit:after{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 20px var(--gold);top:16%;right:17%}
+.orbit:after{background:var(--cyan);box-shadow:0 0 20px var(--cyan);top:auto;right:auto;bottom:12%;left:18%}
+@keyframes spin{to{transform:rotate(360deg)}}
+.core{width:250px;height:250px;border-radius:35px;transform:rotate(-7deg);background:linear-gradient(145deg,#173b59,#0a1a30);border:1px solid #ffffff2a;box-shadow:0 35px 90px #0008,inset 0 0 50px #66d9e815;display:grid;place-items:center;text-align:center;position:relative}
+.core-inner{transform:rotate(7deg)}.bigA{font-size:100px;font-weight:900;line-height:1;color:var(--gold);text-shadow:0 8px 35px #e9bd6860}.core b{display:block;letter-spacing:4px;font-size:17px}.core small{color:var(--muted);font-size:10px;letter-spacing:2px}
+.float{position:absolute;padding:13px 16px;border-radius:14px;background:#102943eF;border:1px solid #ffffff20;box-shadow:0 15px 40px #0005;font-size:12px;animation:float 4s ease-in-out infinite}
+.float strong{color:var(--gold);display:block;font-size:15px}.f1{top:12%;right:0}.f2{bottom:12%;left:0;animation-delay:-2s}
+@keyframes float{50%{transform:translateY(-12px)}}
+.section{padding:75px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.kicker{color:var(--gold);font-size:12px;letter-spacing:2px}.section h2{font-size:clamp(25px,3.5vw,38px);margin:12px 0}.section-head p{color:var(--muted);font-size:14px;line-height:2}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:25px;border:1px solid #ffffff14;background:linear-gradient(145deg,#102943b8,#0b1b30c9);border-radius:18px;transition:.3s;position:relative;overflow:hidden}.service:hover{transform:translateY(-7px);border-color:#e9bd6870;box-shadow:0 18px 45px #0003}.service:after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;background:#65d9e80c;left:-35px;bottom:-40px}.ico{width:45px;height:45px;border-radius:13px;display:grid;place-items:center;background:#e9bd6818;color:var(--gold);font-size:22px}.service h3{font-size:16px;margin:17px 0 8px}.service p{font-size:12px;line-height:2;color:#aebed0;margin:0}
+.platforms{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.platform{border:1px solid #ffffff15;background:#ffffff08;border-radius:14px;padding:15px;display:flex;align-items:center;gap:12px;transition:.25s}.platform:hover{background:#ffffff12;transform:translateY(-4px);border-color:#65d9e855}.picon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:#ffffff12;font-size:18px}.platform b{font-size:13px;display:block}.platform small{font-size:10px;color:var(--muted)}
+.showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.sample{height:240px;border-radius:20px;padding:20px;position:relative;overflow:hidden;border:1px solid #ffffff22;background:linear-gradient(145deg,#173e5b,#0b1a2c)}.sample:nth-child(2){background:linear-gradient(145deg,#3a2852,#111b34)}.sample:nth-child(3){background:linear-gradient(145deg,#17433e,#0c1d2e)}.sample:before{content:"";position:absolute;width:190px;height:190px;border:1px solid #ffffff25;border-radius:50%;left:-35px;bottom:-80px;box-shadow:0 0 0 22px #ffffff08,0 0 0 44px #ffffff05;animation:float 6s infinite}.sample .tag{font-size:10px;color:var(--gold);letter-spacing:2px}.sample h3{font-size:23px;margin:17px 0 7px}.sample p{font-size:12px;color:#d0dce8;line-height:2;max-width:220px}.sample .sample-foot{position:absolute;bottom:18px;right:20px;font-size:10px;color:#ffffff9a}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:22px 17px;border-radius:16px;background:#ffffff08;border:1px solid #ffffff14}.num{color:var(--gold);font-size:25px;font-weight:900}.step h3{font-size:14px}.step p{color:var(--muted);font-size:11px;line-height:2}
+.cta{padding:40px;border:1px solid #e9bd6845;border-radius:24px;background:radial-gradient(circle at 10% 10%,#e9bd6818,transparent 45%),#10243b;text-align:center}.cta h2{font-size:30px;margin:0 0 10px}.cta p{color:#b8c6d5;font-size:13px;line-height:2}
+footer{padding:30px 0;border-top:1px solid #ffffff15;color:#91a3b7;font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.foot strong{color:var(--gold)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:15px}.visual{min-height:350px}.services{grid-template-columns:repeat(2,1fr)}.platforms{grid-template-columns:repeat(3,1fr)}.process{grid-template-columns:repeat(2,1fr)}.links{display:none}}
+@media(max-width:560px){.hero{padding:60px 0 35px}.services{grid-template-columns:1fr}.platforms{grid-template-columns:repeat(2,1fr)}.showcase{grid-template-columns:1fr}.sample{height:210px}.visual{min-height:310px}.core{width:210px;height:210px}.bigA{font-size:82px}.orbit{width:290px}.float{font-size:10px}.cta{padding:28px 18px}.navbtn{padding:10px 12px;font-size:11px}}
+</style>
+</head>
+<body>
+<nav><div class="container navin">
+ <a class="brand" href="#home"><span class="mark">A</span><span>AL-FALAH DIGITAL<small>CREATIVE • TECHNOLOGY • SERVICES</small></span></a>
+ <div class="links"><a href="#services">خدمات</a><a href="#platforms">شبکه‌های اجتماعی</a><a href="#samples">نمونه‌کارها</a><a href="#about">درباره ما</a></div>
+ <a class="navbtn" href="https://wa.me/93793179424" target="_blank">ارتباط با ما ↗</a>
+</div></nav>
+<main id="home">
+<section class="hero"><div class="container hero-grid">
+ <div>
+  <div class="eyebrow"><i class="pulse"></i> همراه دیجیتال کسب‌وکار شما</div>
+  <h1>حضور دیجیتال خود را<br><span class="grad">حرفه‌ای و متفاوت</span> بسازید.</h1>
+  <p class="lead">از طراحی هویت بصری و مدیریت شبکه‌های اجتماعی تا تولید محتوا، تبلیغات و راه‌اندازی خدمات آنلاین؛ ایده‌های شما را به تجربه‌ای حرفه‌ای در دنیای دیجیتال تبدیل می‌کنیم.</p>
+  <div class="actions"><a class="btn primary" href="https://wa.me/93793179424" target="_blank">شروع همکاری در واتساپ ↗</a><a class="btn secondary" href="https://t.me/OWNER_TECH" target="_blank">گفت‌وگو در تلگرام ↗</a></div>
+  <div class="trust"><span>طراحی خلاقانه</span><span>راهکارهای دیجیتال</span><span>پشتیبانی و مشاوره</span></div>
+ </div>
+ <div class="visual"><div class="orbit"></div><div class="core"><div class="core-inner"><div class="bigA">A</div><b>AL-FALAH</b><small>DIGITAL SOLUTIONS</small></div></div><div class="float f1"><strong>360°</strong>خدمات دیجیتال</div><div class="float f2"><strong>IDEA → IMPACT</strong>از ایده تا اجرا</div></div>
+</div></section>
+<section class="section" id="services"><div class="container"><div class="section-head reveal"><div class="kicker">WHAT WE DO</div><h2>خدمات تخصصی ما</h2><p>یک مسیر یکپارچه برای ساخت، مدیریت و گسترش حضور آنلاین برندها، کسب‌وکارها و افراد.</p></div>
+<div class="services">
+ <article class="service reveal"><div class="ico">✦</div><h3>طراحی و هویت بصری</h3><p>طراحی لوگو، بنر، پوستر، کاور، کارت معرفی، قالب پست و استوری با سبک اختصاصی برند شما.</p></article>
+ <article class="service reveal"><div class="ico">▣</div><h3>مدیریت شبکه‌های اجتماعی</h3><p>راه‌اندازی و تنظیم صفحات، برنامه‌ریزی محتوا، مدیریت پیام‌ها و بهبود نظم و کیفیت صفحه.</p></article>
+ <article class="service reveal"><div class="ico">▶</div><h3>تولید و تدوین محتوا</h3><p>ساخت ویدیوهای کوتاه، ریلز، کلیپ تبلیغاتی، تدوین ویدیو، زیرنویس و آماده‌سازی محتوا.</p></article>
+ <article class="service reveal"><div class="ico">◎</div><h3>تبلیغات و بازاریابی دیجیتال</h3><p>طراحی کمپین، معرفی محصولات و خدمات، استراتژی محتوا و مشاوره برای جذب مخاطب هدف.</p></article>
+ <article class="service reveal"><div class="ico">⌘</div><h3>وب‌سایت و خدمات آنلاین</h3><p>طراحی صفحات معرفی، وب‌سایت شرکتی، صفحه فرود، فرم‌های آنلاین و راهکارهای ساده دیجیتال.</p></article>
+ <article class="service reveal"><div class="ico">⚙</div><h3>ربات و ابزارهای هوشمند</h3><p>مشاوره و طراحی راهکارهای تلگرامی، ربات‌های مدیریت گروه، ابزارهای پاسخ‌گویی و اتوماسیون.</p></article>
+</div></div></section>
+<section class="section" id="platforms"><div class="container"><div class="section-head reveal"><div class="kicker">SOCIAL MEDIA NETWORKS</div><h2>خدمات در پلتفرم‌های مطرح جهان</h2><p>برای حضور، معرفی، مدیریت و تولید محتوا در شبکه‌های اجتماعی و پلتفرم‌های دیجیتال زیر، خدمات و راهکار ارائه می‌شود.</p></div>
+<div class="platforms">
+ <div class="platform"><span class="picon">◎</span><span><b>Instagram</b><small>اینستاگرام</small></span></div>
+ <div class="platform"><span class="picon">f</span><span><b>Facebook</b><small>فیس‌بوک</small></span></div>
+ <div class="platform"><span class="picon">♪</span><span><b>TikTok</b><small>تیک‌تاک</small></span></div>
+ <div class="platform"><span class="picon">▶</span><span><b>YouTube</b><small>یوتیوب</small></span></div>
+ <div class="platform"><span class="picon">➤</span><span><b>Telegram</b><small>تلگرام</small></span></div>
+ <div class="platform"><span class="picon">◉</span><span><b>WhatsApp</b><small>واتساپ</small></span></div>
+ <div class="platform"><span class="picon">𝕏</span><span><b>X</b><small>ایکس / توییتر</small></span></div>
+ <div class="platform"><span class="picon">👻</span><span><b>Snapchat</b><small>اسنپ‌چت</small></span></div>
+ <div class="platform"><span class="picon">in</span><span><b>LinkedIn</b><small>لینکدین</small></span></div>
+ <div class="platform"><span class="picon">P</span><span><b>Pinterest</b><small>پینترست</small></span></div>
+ <div class="platform"><span class="picon">◎</span><span><b>Threads</b><small>تردز</small></span></div>
+ <div class="platform"><span class="picon">◈</span><span><b>Discord</b><small>دیسکورد</small></span></div>
+ <div class="platform"><span class="picon">●</span><span><b>Reddit</b><small>ردیت</small></span></div>
+ <div class="platform"><span class="picon">◉</span><span><b>Twitch</b><small>توییچ</small></span></div>
+ <div class="platform"><span class="picon">♫</span><span><b>Spotify</b><small>اسپاتیفای</small></span></div>
+ <div class="platform"><span class="picon">✉</span><span><b>Messenger</b><small>مسنجر</small></span></div>
+</div></div></section>
+<section class="section" id="samples"><div class="container"><div class="section-head reveal"><div class="kicker">CREATIVE PREVIEW</div><h2>نگاهی به سبک اجرا</h2><p>چند طرح نمایشی برای نمایش سبک بصری، معرفی برند و محتوای تبلیغاتی.</p></div>
+<div class="showcase">
+ <div class="sample reveal"><div class="tag">BRAND IDENTITY / 01</div><h3>هویت ماندگار</h3><p>یک تصویر منسجم، حرفه‌ای و قابل تشخیص برای برند شما.</p><div class="sample-foot">AL-FALAH • DESIGN STUDIO</div></div>
+ <div class="sample reveal"><div class="tag">SOCIAL CAMPAIGN / 02</div><h3>محتوای تأثیرگذار</h3><p>پیام برندتان را با طراحی و روایت درست به مخاطب برسانید.</p><div class="sample-foot">CREATE • CONNECT • GROW</div></div>
+ <div class="sample reveal"><div class="tag">DIGITAL PRESENCE / 03</div><h3>حضور هوشمند</h3><p>از صفحه اجتماعی تا وب‌سایت؛ همه‌چیز هماهنگ و هدفمند.</p><div class="sample-foot">YOUR DIGITAL PARTNER</div></div>
+</div></div></section>
+<section class="section" id="about"><div class="container"><div class="section-head reveal"><div class="kicker">OUR APPROACH</div><h2>همکاری ساده، نتیجه حرفه‌ای</h2><p>نیاز شما را می‌شنویم، راهکار مناسب پیشنهاد می‌کنیم و پس از توافق، مراحل اجرا را شفاف پیش می‌بریم.</p></div>
+<div class="process">
+ <div class="step reveal"><div class="num">01</div><h3>دریافت درخواست</h3><p>هدف، نوع خدمات و نیاز پروژه شما مشخص می‌شود.</p></div>
+ <div class="step reveal"><div class="num">02</div><h3>پیشنهاد راهکار</h3><p>جزئیات، زمان‌بندی و هزینه پس از بررسی اعلام می‌شود.</p></div>
+ <div class="step reveal"><div class="num">03</div><h3>طراحی و اجرا</h3><p>کار مطابق توافق و با هماهنگی شما پیش می‌رود.</p></div>
+ <div class="step reveal"><div class="num">04</div><h3>تحویل و پشتیبانی</h3><p>خروجی بررسی و طبق توافق تحویل داده می‌شود.</p></div>
+</div></div></section>
+<section class="section"><div class="container"><div class="cta reveal"><div class="kicker">LET'S BUILD SOMETHING GREAT</div><h2>پروژه دیجیتال شما از یک پیام آغاز می‌شود.</h2><p>برای دریافت مشاوره، ثبت سفارش یا بررسی همکاری با ما در ارتباط شوید.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://wa.me/93793179424" target="_blank">واتساپ: +93 793 179 424 ↗</a><a class="btn secondary" href="https://t.me/OWNER_TECH" target="_blank">تلگرام: @OWNER_TECH ↗</a></div></div></div></section>
+</main>
+<footer><div class="container foot"><div><strong>AL-FALAH DIGITAL</strong> — ارائه‌دهنده خدمات دیجیتال و مجازی</div><div>سازنده و توسعه‌دهنده: <strong>نورالله نوری</strong></div><div>© 2026 AL-FALAH. تمامی حقوق محفوظ است.</div></div></footer>
+<script>
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body></html>
